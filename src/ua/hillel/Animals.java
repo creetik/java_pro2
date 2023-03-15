@@ -1,13 +1,17 @@
 import java.util.Scanner;
 
-public class Animals {
-    int add_animals;
+public class Animal {
+    private int AnimalCount;
 
-private String name;
+    public int getAnimalCount() {
+        return AnimalCount;
+    }
 
-    public Animals(String name) {
+    private String name;
+
+    public Animal(String name) {
         this.name = name;
-    add_animals++;
+        AnimalCount++;
     }
 
     public String getName() {
@@ -17,13 +21,13 @@ private String name;
     public void setName(String name) {
         this.name = name;
     }
-public void run (int runer){
-    System.out.println( getName()+" пробіг "+ runer+" м");
 
-}
+    public void run(int runer) {
+        System.out.println(getName() + " пробіг " + runer + " м");
+    }
 
-public void swim(int runer){
-    System.out.println(getName()+" проплив "+runer+" м");
-}
+    public void swim(int runer) {
+        System.out.println(getName() + " проплив " + runer + " м");
+    }
 }
 

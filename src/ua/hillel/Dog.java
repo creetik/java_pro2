@@ -1,28 +1,32 @@
-public class Dog extends Animals{
-     int max_run =500;
-     int max_swim =10;
-     int add_dog;
+public class Dog extends Animal {
+    private int maxRun = 500;
+    private int maxSwim = 10;
+    private static int DogCount;
+
+    public int getDogCount() {
+        return DogCount;
+    }
+
     public Dog(String name) {
         super(name);
-add_dog++;
+        DogCount++;
     }
-    @Override
-public void run (int runer){
-        if (runer<=max_run) {
-            System.out.println(getName() + "  пробіг " + runer + " М");
-        }
-else  {
-            System.out.println(getName()+" не може пробігти більше ніж "+ max_run+" M");
-        }
 
+    @Override
+    public void run(int runer) {
+        if (runer <= maxRun) {
+            System.out.println(getName() + "  пробіг " + runer + " М");
+        } else {
+            System.out.println(getName() + " не може пробігти більше ніж " + maxRun + " M");
         }
-@Override
-public void swim(int runer){
-        if (runer<=max_swim){
-            System.out.println(getName()+" Проплив "+runer+" М");
-        }
-else
-            System.out.println(getName()+" не може пропливти білше ніж "+max_swim+" M");
+    }
+
+    @Override
+    public void swim(int runer) {
+        if (runer <= maxSwim) {
+            System.out.println(getName() + " Проплив " + runer + " М");
+        } else
+            System.out.println(getName() + " не може пропливти білше ніж " + maxSwim + " M");
     }
 }
 
