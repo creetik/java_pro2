@@ -1,4 +1,4 @@
-public class Dog extends Animal {
+public class  Dog extends Animal {
     private int maxRun = 500;
     private int maxSwim = 10;
     private static int DogCount;

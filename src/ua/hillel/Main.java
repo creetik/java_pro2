@@ -1,4 +1,4 @@
-public class Main {
+public class  Main {
     public static void main(String[] args) {
         Animal animals = new Dog("Bobik");
         Animal catt = new Cat("KISKIS");
