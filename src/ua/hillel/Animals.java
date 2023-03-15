@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Animal {
+public class  Animal {
     private int AnimalCount;
 
     public int getAnimalCount() {
